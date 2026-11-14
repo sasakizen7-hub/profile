@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介ページ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>佐々木善生の自己紹介</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#profile">自己紹介</a></li>
+                <li><a href="#likes">好きなもの</a></li>
+                <li><a href="#holiday">休日の過ごし方</a></li>
+                <li><a href="#schedule">予定</a></li>
+                <li><a href="#contact">感想を送る</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="profile">
+            <h2>自己紹介</h2>
+            <p>こんにちは。ゲームと猫が好きです。</p>
+        </section>
+
+        <section id="likes">
+            <h2>好きなもの</h2>
+            <ul>
+                <li>猫</li>
+                <li>ゲーム</li>
+                <li>野球</li>
+            </ul>
+
+            <h2>おすすめのWebページ</h2>
+            <p>
+                <a href="https://www.google.com/">Google</a>
+            </p>
+        </section>
+
+        <section id="holiday">
+            <h2>休日の過ごし方</h2>
+            <ul>
+                <li>昼前まで寝る</li>
+                <li>遊ぶ</li>
+                <li>バイトをする</li>
+                <li>課題に取り組む</li>
+            </ul>
+        </section>
+
+        <section id="schedule">
+            <h2>1週間の予定</h2>
+
+            <table border="1">
+                <tr>
+                    <th>曜日</th>
+                    <th>予定</th>
+                </tr>
+                <tr>
+                    <td>月曜日</td>
+                    <td>大学</td>
+                </tr>
+                <tr>
+                    <td>金曜日</td>
+                    <td>アルバイト</td>
+                </tr>
+                <tr>
+                    <td>土曜日</td>
+                    <td>遊ぶ</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>このページの感想を送る</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="name">名前：</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="田中太郎" required>
+                </p>
+
+                <p>好きなもの：</p>
+
+                <input type="radio" id="cat" name="favorite" value="cat">
+                <label for="cat">猫</label>
+
+                <input type="radio" id="game" name="favorite" value="game">
+                <label for="game">ゲーム</label>
+
+                <p>
+                    <label for="comment">感想：</label><br>
+                    <textarea id="comment" name="comment"
+                              rows="4" cols="30"
+                              placeholder="感想を書いてください"></textarea>
+                </p>
+
+                <button type="submit">送信</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 佐々木善生</p>
+    </footer>
+
+</body>
+</html>
