@@ -1,0 +1,112 @@
+/* ページ全体 */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/* ヘッダー */
+.header {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #333333;
+}
+
+/* ヘッダーのタイトル */
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* チャット画面 */
+.chat {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* メッセージ全体 */
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+/* 相手のメッセージ */
+.left {
+    align-items: flex-start;
+}
+
+/* 自分のメッセージ */
+.right {
+    align-items: flex-end;
+}
+
+/* 名前 */
+.name {
+    font-size: 12px;
+    color: #aaaaaa;
+    margin: 0 0 5px 5px;
+}
+
+/* 吹き出し共通 */
+.bubble {
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-width: 70%;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 相手の吹き出し */
+.left .bubble {
+    background-color: #303030;
+    color: white;
+    border: 1px solid #444444;
+}
+
+/* 自分の吹き出し */
+.right .bubble {
+    background: linear-gradient(135deg, #833ab4, #c13584);
+    color: white;
+}
+
+/* 入力欄 */
+.input-area {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* テキスト入力 */
+.input-area input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #444444;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #262626;
+    color: white;
+}
+
+/* 入力欄の文字 */
+.input-area input::placeholder {
+    color: #999999;
+}
+
+/* 送信ボタン */
+.input-area button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #833ab4, #c13584);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
