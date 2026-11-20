@@ -1,115 +1,125 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介ページ</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-    <header>
-        <h1>佐々木善生の自己紹介</h1>
+<html lang="ja"> <head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <title>自己紹介ページ</title>     <link rel="stylesheet" href="style.css"> </head> <body>
 
-        <nav>
-            <ul>
-                <li><a href="#profile">自己紹介</a></li>
-                <li><a href="#likes">好きなもの</a></li>
-                <li><a href="#holiday">休日の過ごし方</a></li>
-                <li><a href="#schedule">予定</a></li>
-                <li><a href="#contact">感想を送る</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>ぜんの自己紹介</h1>
 
-    <main>
+    <nav>
+        <ul>
+            <li><a href="#profile">自己紹介</a></li>
+            <li><a href="#likes">好きなもの</a></li>
+            <li><a href="#holiday">休日の過ごし方</a></li>
+            <li><a href="#schedule">予定</a></li>
+            <li><a href="#contact">感想を送る</a></li>
+            <li><a href="#ask">質問コーナー</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <section id="profile">
-            <h2>自己紹介</h2>
-            <p>こんにちは。ゲームと猫が好きです。</p>
-        </section>
+<main>
 
-        <section id="likes">
-            <h2>好きなもの</h2>
-            <ul>
-                <li>猫</li>
-                <li>ゲーム</li>
-                <li>野球</li>
-            </ul>
+    <section id="profile">
+        <h2>自己紹介</h2>
+        <p>こんにちは。ゲームと猫が好きです。</p>
+    </section>
 
-            <h2>おすすめのWebページ</h2>
+    <section id="likes">
+        <h2>好きなもの</h2>
+        <ul>
+            <li>猫</li>
+            <li>ゲーム</li>
+            <li>野球</li>
+        </ul>
+
+        <h2>おすすめのWebページ</h2>
+        <p>
+            <a href="https://www.google.com/">Google</a>
+        </p>
+    </section>
+
+    <section id="holiday">
+        <h2>休日の過ごし方</h2>
+        <ul>
+            <li>昼前まで寝る</li>
+            <li>遊ぶ</li>
+            <li>バイトをする</li>
+            <li>課題に取り組む</li>
+        </ul>
+    </section>
+
+    <section id="schedule">
+        <h2>1週間の予定</h2>
+
+        <table border="1">
+            <tr>
+                <th>曜日</th>
+                <th>予定</th>
+            </tr>
+            <tr>
+                <td>月曜日</td>
+                <td>大学</td>
+            </tr>
+            <tr>
+                <td>金曜日</td>
+                <td>アルバイト</td>
+            </tr>
+            <tr>
+                <td>土曜日</td>
+                <td>遊ぶ</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>このページの感想を送る</h2>
+
+        <form action="#" method="post">
             <p>
-                <a href="https://www.google.com/">Google</a>
+                <label for="name">名前：</label>
+                <input type="text" id="name" name="name"
+                       placeholder="田中太郎" required>
             </p>
-        </section>
 
-        <section id="holiday">
-            <h2>休日の過ごし方</h2>
-            <ul>
-                <li>昼前まで寝る</li>
-                <li>遊ぶ</li>
-                <li>バイトをする</li>
-                <li>課題に取り組む</li>
-            </ul>
-        </section>
+            <p>好きなもの：</p>
 
-        <section id="schedule">
-            <h2>1週間の予定</h2>
+            <input type="radio" id="cat" name="favorite" value="cat">
+            <label for="cat">猫</label>
 
-            <table border="1">
-                <tr>
-                    <th>曜日</th>
-                    <th>予定</th>
-                </tr>
-                <tr>
-                    <td>月曜日</td>
-                    <td>大学</td>
-                </tr>
-                <tr>
-                    <td>金曜日</td>
-                    <td>アルバイト</td>
-                </tr>
-                <tr>
-                    <td>土曜日</td>
-                    <td>遊ぶ</td>
-                </tr>
-            </table>
-        </section>
+            <input type="radio" id="game" name="favorite" value="game">
+            <label for="game">ゲーム</label>
 
-        <section id="contact">
-            <h2>このページの感想を送る</h2>
+            <p>
+                <label for="comment">感想：</label><br>
+                <textarea id="comment" name="comment"
+                          rows="4" cols="30"
+                          placeholder="感想を書いてください"></textarea>
+            </p>
 
-            <form action="#" method="post">
-                <p>
-                    <label for="name">名前：</label>
-                    <input type="text" id="name" name="name"
-                           placeholder="田中太郎" required>
-                </p>
+            <button type="submit">送信</button>
+        </form>
+    </section>
 
-                <p>好きなもの：</p>
+    <!-- 質問コーナー -->
+    <section>
+        <h2 id="ask">質問コーナー</h2>
 
-                <input type="radio" id="cat" name="favorite" value="cat">
-                <label for="cat">猫</label>
+        <p>名前を入れて、ボタンを押してください。</p>
 
-                <input type="radio" id="game" name="favorite" value="game">
-                <label for="game">ゲーム</label>
+        <input type="text" id="guest-name">
 
-                <p>
-                    <label for="comment">感想：</label><br>
-                    <textarea id="comment" name="comment"
-                              rows="4" cols="30"
-                              placeholder="感想を書いてください"></textarea>
-                </p>
+        <button onclick="greet()">あいさつする</button>
 
-                <button type="submit">送信</button>
-            </form>
-        </section>
+        <p id="reply"></p>
+    </section>
 
-    </main>
+</main>
 
-    <footer>
-        <p>&copy; 2026 佐々木善生</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 ぜん</p>
+</footer>
 
-</body>
-</html>
+<script src="js/main.js"></script>
+```
+
+\</body> \</html>
